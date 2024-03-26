@@ -1,0 +1,307 @@
+.container-pl {
+  margin-bottom: 40px;
+}
+
+/* *******************************************повідомлення "нічого не знайдено"************************** */
+.error-load {
+  width: 279px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  text-align: center;
+  gap: 14px;
+}
+
+.not-found-heading {
+  font-family: Neue Montreal;
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 1.11em;
+}
+
+.not-found-message {
+  font-family: Neue Montreal;
+  color: rgba(1, 1, 1, 0.7);
+  font-size: 14px;
+  line-height: 1.29em;
+}
+.green-word {
+  color: var(--color-btn);
+}
+/* **************************************кінець повідомлення*********************************** */
+
+/* *******************************************Карточка************************************** */
+.section-products {
+  position: relative;
+  padding-bottom: 80px;
+}
+.products {
+  margin-bottom: 80px;
+}
+
+.container-info {
+  display: flex;
+  height: 88px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bckg);
+  gap: 20px;
+}
+
+.item-pl {
+  position: relative;
+  max-width: 335px;
+  border-radius: 20px;
+  background: var(--color-card-bckg);
+  padding: 20px;
+  cursor: pointer;
+}
+.item-pl:hover,
+.item-pl:focus {
+  box-shadow: 0px 9.1px 16.534px 0px rgba(0, 0, 0, 0.02),
+    0px 41.6px 46.475px 0px rgba(0, 0, 0, 0.04),
+    0px 105.3px 124.678px 0px rgba(0, 0, 0, 0.05),
+    0px 208px 286px 0px rgba(0, 0, 0, 0.07);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.background-img-pl {
+  display: flex;
+  justify-content: center;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--color-bckg);
+}
+.img-pl {
+  display: inline;
+  width: 140px;
+  height: 140px;
+}
+.product-name-pl {
+  margin-bottom: 10px;
+  color: var(--color-text);
+  font-family: 'Neue Montreal';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.11em; /* 111% */
+  height: 20px;
+}
+.product-info-pl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.paragraph-pl {
+  color: rgba(1, 1, 1, 0.3);
+  font-family: Neue Montreal;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17em; /* 116.667% */
+}
+.value-pl {
+  color: var(--color-text);
+  font-family: Neue Montreal;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17em; /* 116.667% */
+}
+.price-container-pl {
+  display: flex;
+  height: 34px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.price-pl {
+  color: var(--color-text);
+  font-family: Neue Montreal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1em; /* 120% */
+}
+.btn-pl {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-btn);
+  cursor: pointer;
+}
+.btn-pl:hover,
+.btn-pl:focus {
+  background-color: var(--color-btn-active);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-pl:disabled {
+  background-color: var(--color-btn);
+  cursor: auto;
+}
+
+.icon-pl {
+  fill: var(--color-bckg);
+  width: 18px;
+  height: 18px;
+}
+.icon-discount-pl {
+  position: absolute;
+  top: 0%;
+  right: 3%;
+  width: 60px;
+  height: 60px;
+  transform: scale(0);
+  transform-origin: center;
+  animation: shineAnimation 2s ease-in-out infinite;
+}
+
+@keyframes shineAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+/* ***************************************кінець карточки*******************************8 */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .section-products {
+    padding-bottom: 100px;
+  }
+
+  .products {
+    margin-bottom: 100px;
+  }
+
+  .container-pl {
+    width: 704px;
+    margin-bottom: 50px;
+  }
+
+  .product-list {
+    max-width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 32px;
+  }
+
+  .price-pl {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  .item-pl {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .container-info {
+    display: flex;
+    height: 88px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .product-name-pl {
+    line-height: 1.2em;
+    height: 24px;
+  }
+
+  .error-load {
+    width: 367px;
+    margin-top: 110px;
+    margin-bottom: 250px;
+  }
+  .not-found-heading {
+    font-size: 20px;
+    line-height: 1.2em;
+    font-family: Neue Montreal;
+  }
+  .not-found-message {
+    font-size: 18px;
+    font-family: Neue Montreal;
+    line-height: 1.33em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-products {
+    padding-bottom: 61px;
+  }
+
+  .products {
+    margin-bottom: 0px;
+    height: 1249px;
+  }
+
+  .container-pl {
+    justify-content: start;
+    width: 925px;
+    margin-bottom: 40px;
+  }
+
+  .item-pl {
+    width: calc((100% - 40px) / 3);
+  }
+  .product-list {
+    gap: 40px 20px;
+    max-width: 925px;
+  }
+  .product-info-pl {
+    height: 37px;
+  }
+  .error-load {
+    margin-top: 150px;
+  }
+  .container-info {
+    display: flex;
+    height: 91px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .not-found-heading {
+    font-family: Neue Montreal;
+    font-size: 20px;
+    width: 371px;
+  }
+
+  .not-found-message {
+    font-family: Neue Montreal;
+    font-size: 18px;
+    width: 371px;
+  }
+}

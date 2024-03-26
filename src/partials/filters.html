@@ -1,0 +1,70 @@
+<section class="filter">
+  <div class="container">
+    <p class="filters-text">Filters:</p>
+    <div class="container-search">
+      <form class="search-form" id="search">
+        <label for="search-input" class="search-label">
+          <input
+            type="text"
+            name="search"
+            class="search-input"
+            autocomplete="off"
+            placeholder="Search for anything"
+            id="search-input"
+        /></label>
+        <button class="search-button" type="submit" aria-label="Filters">
+          <svg class="search-icon">
+            <use href="/img/icons.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="select">
+        <div class="select__header">
+          <span class="select__current">Categories</span>
+          <div class="select__icon">
+            <svg class="down-icon">
+              <use href="/img/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="select__body">
+          <div class="select__item">Show all</div>
+        </div>
+      </div>
+
+      <div class="sort">
+        <div class="sort-header">
+          <span class="sort-current">A to Z</span>
+          <div class="sort-icon">
+            <svg class="down-icon">
+              <use href="/img/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="sort-body">
+          <div class="sort-item">A to Z</div>
+          <div class="sort-item">Z to A</div>
+          <div class="sort-item">Cheap</div>
+          <div class="sort-item">Expensive</div>
+          <div class="sort-item">Popular</div>
+          <div class="sort-item">Not Popular</div>
+          <div class="sort-item">Reset Sort</div>
+        </div>
+      </div>
+
+      <div class="clean-filters">
+        <button class="clean-button" aria-label="Cleaner filters" disabled>
+          <svg class="clean-icon">
+            <use
+              href="/img/icons.svg#icon-clean"
+              width="18px"
+              height="18px"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="./js/filters.js" type="module"></script>
+<script src="./js/search.js" type="module"></script>

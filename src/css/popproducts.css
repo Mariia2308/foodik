@@ -1,0 +1,148 @@
+.popproducts {
+  margin-bottom: 80px;
+}
+
+.popular-title {
+  color: var(--color-text);
+  font-family: Neue Montreal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.17;
+  margin-bottom: 20px;
+}
+.popular-list {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+}
+.item-popular {
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  background-color: var(--color-card-bckg);
+  height: 98px;
+  cursor: pointer;
+}
+.background-img-popular {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-left: 12px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--color-bckg);
+  width: 74px;
+  height: 74px;
+}
+.img-popular {
+  margin: auto;
+  width: 56px;
+  height: 56px;
+}
+
+.popular-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.popular-name {
+  color: var(--color-text);
+  font-family: Neue Montreal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.11;
+}
+.popular-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  width: 152px;
+}
+.popular-info-items {
+  color: rgba(1, 1, 1, 0.3);
+  font-family: Neue Montreal;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+}
+.value-popular {
+  color: var(--color-text);
+  font-family: Neue Montreal;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+}
+.popularBtn {
+  margin-top: 12px;
+  margin-right: 12px;
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--color-bckg);
+  border: var(--color-bckg);
+}
+
+.popularBtn:hover {
+  background: var(--color-btn);
+  border: var(--color-btn);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.popularBtn:disabled {
+  background-color: var(--color-btn);
+  cursor: auto;
+}
+.popularBtn:hover .icon-popular {
+  fill: var(--color-bckg);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-popular {
+  position: absolute;
+  fill: var(--color-btn);
+}
+
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .popproducts {
+    margin-bottom: 64px;
+  }
+
+  .item-popular {
+    width: 275px;
+    height: 98px;
+  }
+  .popular-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 13px;
+  }
+  .popular-title {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+  .popular-name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .popproducts {
+    margin-bottom: 40px;
+  }
+}

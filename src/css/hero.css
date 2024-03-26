@@ -1,0 +1,207 @@
+/* Hero Section */
+
+.hero .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* outline: 2px dashed red; */
+}
+
+.hero-title {
+  display: inline-block;
+  width: 335px;
+  height: 96px;
+  color: var(--color-text);
+  text-align: center;
+  font-family: 'Neue Montreal';
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.09; /* 109.091% */
+  letter-spacing: -0.02em;
+}
+
+.accent-word {
+  display: inline-block;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 480px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.hero-text {
+  display: inline-block;
+  font-family: 'Neue Montreal';
+  margin-top: 16px;
+  margin-bottom: 32px;
+  width: 292px;
+  height: 55px;
+  color: rgba(1, 1, 1, 0.8);
+  text-align: center;
+  /* font-family: 'NeueMontreal', sans-serif; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.28; /* 128.571% */
+}
+
+.leaf {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+
+  top: -7px;
+  right: 8px;
+}
+
+.organic-food {
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+
+  top: -7px;
+  right: 8px;
+
+  z-index: 998;
+
+  animation: rotateAnimation 6s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(360deg); /* Початкове положення іконки (0 градусів) */
+  }
+  100% {
+    transform: rotate(0deg); /* Кінцеве положення іконки (360 градусів) */
+  }
+}
+
+.hero .container {
+  padding-top: 72px;
+}
+
+
+.images {
+  overflow: hidden;
+  object-fit: cover; /* Забезпечує збереження пропорцій при обрізанні */
+  border-radius: 30px; /* Додайте бажаний border-radius */
+  object-fit: contain;
+}
+
+/* Add animation */
+@media screen and (min-width: 375px) {
+  .hero-title {
+    width: 335px;
+  }
+
+  .hero-image {
+    height: 480px;
+  }
+
+  .hero .container {
+    width: 375px; 
+    padding-top: 72px;
+  }
+    
+  .hero-image {
+    width: 335px;
+  }
+
+  .images {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .hero .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 77px 32px 0 32px;
+  }
+
+  .hero-title {
+    width: 658px;
+    font-size: 80px;
+    height: 160px;
+    font-weight: 500;
+    letter-spacing: -0.0364em;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 492px;
+    height: 48px;
+    margin-bottom: 40px;
+  }
+
+  .hero-image {
+    width: 704px;
+    height: 580px;
+    /* background-image: url(/img/header_hero_ing/hero-tablet1.jpg),
+      url(/img/header_hero_ing/hero-tablet1@2x.jpg);
+    border-radius: 50px; */
+  }
+
+  .organic-food {
+    top: -30px;
+    right: 10px;
+  }
+
+  .leaf {
+    top: -30px;
+    right: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-image {
+    width: 1240px;
+    height: 350px;
+    border-radius: 50px;
+  }
+
+  .hero .container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 38.px 100px 0 100px;
+  }
+
+  .hero .hero-title {
+    width: 1042px;
+    height: 80px;
+    font-size: 80px;
+    display: inline;
+    white-space: nowrap;
+  }
+
+  .hero-text {
+    width: 492px;
+    height: 48px;
+    line-height: 1.333;
+    color: rgba(1, 1, 1, 0.80);
+  }
+
+  .organic-food {
+    top: -50px;
+    right: 20px;
+  }
+
+  .leaf {
+    top: -50px;
+    right: 20px;
+  }
+}
